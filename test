@@ -1,3 +1,9 @@
+local Passwords = {"necro0221","1287A00012A"} -- write all your choosen passwords in this tab .
+local Menu = gg.prompt({"Key :"},nil,{"text"})
+if not Menu then return end
+for l , I in pairs(Passwords) do
+if Menu[1] == I then A = true end
+end
 gg.toast('NecroZyph - 1.1 - 1.17.0f1147 - Made By Chris and 007')
 gg.sleep(10000)
 gg.toast('Loading.')
