@@ -5,7 +5,7 @@ for l , I in pairs(Passwords) do
 if Menu[1] == I then A = true end
 end
 if A ~= true then gg.alert("⚠ Error Wrong Key! ") return else gg.toast("✅ Correct Password !") end
-gg.toast('NecroZyph - 1.1 - 1.17.0f1147 - Made By Chris and 007')
+gg.toast('NecroZyph - 1.2 - 1.17.0f1147 - Made By Chris and 007')
 gg.sleep(10000)
 gg.toast('Loading.')
 gg.sleep(100)
@@ -19,7 +19,7 @@ gg.toast('Loaded!')
 
 HOMHOMHOME=1
 function HOME()
-AB = gg.choice({'32 Bit ',' 64 Bit',' Crash Game after Match Ends  [32 BIT]','Kill Script'},nil,'Pick your Device Architecture')
+AB = gg.choice({'32 Bit','64 Bit','Crash Game after Match Ends  [32 BIT]','Kill Script'},nil,'Pick your Device Architecture')
 if AB == 1 then threetwo() end
 if AB == 2 then sixfor() end
 if AB == 3 then crash() end
@@ -72,16 +72,15 @@ end
 function EX()
 extreme = gg.choice({'Rain','Fly','X3.5 FireRate','Giant Body','Larger HitBox','Shoot Through Walls','Magic Bullets','Noclip','WallClimb','Back'},nil,'Extreme Hacks')
 if extreme == 1 then rain() end
-if extreme == 2 then ug() end
-if extreme == 3 then fly() end
-if extreme == 4 then firerr() end
-if extreme == 5 then gb() end
-if extreme == 6 then lbh() end
-if extreme == 7 then stw() end
-if extreme == 8 then mb() end
-if extreme == 9 then nc() end
-if extreme == 10 then wc() end
-if extreme == 11 then threetwo() end
+if extreme == 2 then fly() end
+if extreme == 3 then firerr() end
+if extreme == 4 then gb() end
+if extreme == 5 then lbh() end
+if extreme == 6 then stw() end
+if extreme == 7 then mb() end
+if extreme == 8 then nc() end
+if extreme == 9 then wc() end
+if extreme == 10 then threetwo() end
 if extreme == nil then hide() end
 end
 
@@ -120,31 +119,7 @@ gg.toast("Rain Activated")
 end
 
 function sixfor()
-six = gg.choice({'Legit Hacks','Extreme Hacks','Back'},nil,'x64 Bit(arm64)')
-if six == 1 then LH1() end
-if six == 2 then EX1() end
-if six == 3 then HOME() end
-if six == nil then hide() end
-end
-
-function LH1()
-legit1 = gg.choice({'Radar','FOV','No Recoil','Aim Assist Boost','X2 FireRate','Back'},nil,'Legit Hacks')
-if legit1 == 1 then rad1() end
-if legit1 == 2 then FOV() end
-if legit1 == 3 then nr() end
-if legit1 == 4 then aab() end
-if legit1 == 5 then firer() end
-if legit1 == 6 then HOME() end
-if legit1 == nil then hide() end
-end
-
-function EX1()
-ex = gg.choice({'Giant Body','Larger Body Hitbox','Fly','Back'},nil,'Extreme Hacks')
-if ex == 1 then gb() end
-if ex == 2 then lbh() end
-if ex == 3 then fly() end
-if ex == 4 then sixfor() end
-if ex == nil then hide() end
+gg.alert("We need 64 bit - arm64 scripters!")
 end
 
 function nap()
@@ -281,90 +256,13 @@ gg.clearResults()
 end
 
 function FOV()
-Fov = gg.choice ({'Fov 60° ',' Fov 95° ',' Fov 125° ',' FOV 165° ',' Fov 200°'},nil,'FOV')
-if Fov == 1 then FH2() end
-if Fov == 2 then FH3() end
-if Fov == 3 then FH4() end
-if Fov == 4 then FH5() end
-if Fov == 5 then FH10() end
-if Fov == nil then hide() end
-HOMEDM=-1
-end
-
-
-function FH2() 
-local old = gg.getRanges();
 gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber('360', gg.TYPE_FLOAT)
-gg.searchAddress('40',FF)
-gg.getResults(5)
-gg.editAll(300, gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast('Fov Changed')
-gg.setRanges(old)
-end
-
-
-function FH3() 
-local old = gg.getRanges();
-gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber('360', gg.TYPE_FLOAT)
-gg.searchAddress('40',FF)
-gg.getResults(5)
-gg.editAll(265, gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast('Fov Changed')
-gg.setRanges(old)
-end
-
-
-function FH4() 
-local old = gg.getRanges();
-gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber('360', gg.TYPE_FLOAT)
-gg.searchAddress('40',FF)
-gg.getResults(5)
-gg.editAll(235, gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast('Fov Changed')
-gg.setRanges(old)
-end
-
-function FH5() 
-local old = gg.getRanges();
-gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber('360', gg.TYPE_FLOAT)
-gg.searchAddress('40',FF)
-gg.getResults(5)
-gg.editAll(200, gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast('Fov Changed')
-gg.setRanges(old)
-end
-
-
-function FH10() 
-local old = gg.getRanges();
-gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber('360', gg.TYPE_FLOAT)
-gg.searchAddress('40',FF)
-gg.getResults(5)
-gg.editAll(160, gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast('Fov Changed')
-gg.setRanges(old)
-end
-
-
- function FR2()
-local old = gg.getRanges();
-gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber(60, gg.TYPE_FLOAT)
+gg.searchNumber("0000B443r", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0000B443r", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(50)
-gg.editAll(57, gg.TYPE_FLOAT)
+gg.editAll("00007543r", gg.TYPE_FLOAT)
+gg.toast('Fov Activated')
 gg.clearResults()
-gg.toast('Fov Changed')
-gg.setRanges(old)
 end
 
 function mb()
@@ -382,11 +280,12 @@ end
 function stw()
 local old = gg.getRanges();
 gg.setRanges(gg.REGION_C_BSS)
-gg.searchNumber('00000040r', gg.TYPE_DOUBLE)
+gg.searchNumber('2', gg.TYPE_DOUBLE)
 gg.getResults(10000)
-gg.editAll("000000C0r", gg.TYPE_DOUBLE)
+gg.editAll(-2, gg.TYPE_DOUBLE)
 gg.clearResults()
 gg.toast('Shoot Through Walls Activated')
+gg.setRanges(old)
 end
 
 function tr()
@@ -397,24 +296,6 @@ gg.getResults(100000)
 gg.editAll("8716F93Fr",gg.TYPE_FLOAT)
 gg.toast('Team Radar Activated')
 gg.clearResults()
-end
-
-function ug()
-gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber("0251AF43r", gg.TYPE_FLOAT)
-gg.getResults (100)
-gg.editAll ('00004040r', gg.TYPE_FLOAT)
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber('FFFFBF3Fr',gg.TYPE_FLOAT)
-gg.getResults(1000)
-gg.editAll('000080BFr',gg.TYPE_FLOAT)
-gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber("00004040r", gg.TYPE_FLOAT)
-gg.getResults (100)
-gg.editAll ('13E7A241r', gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast('Under Ground Activated')
 end
 
 function fly()
