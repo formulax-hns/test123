@@ -1,4 +1,4 @@
-local Passwords = {"necro0221","1287A00012A"} 
+local Passwords = {"02217782l","1287A00012A"} 
 local Menu = gg.prompt({"Key :"},nil,{"text"})
 if not Menu then return end
 for l , I in pairs(Passwords) do
@@ -70,17 +70,16 @@ HOMEDM=-1
 end
 
 function EX()
-extreme = gg.choice({'Rain','Fly','X3.5 FireRate','Giant Body','Larger HitBox','Shoot Through Walls','Magic Bullets','Noclip','WallClimb','Back'},nil,'Extreme Hacks')
+extreme = gg.choice({'Rain','Fly','X3.5 FireRate','Giant Body'','Shoot Through Walls','Magic Bullets','Noclip','WallClimb','Back'},nil,'Extreme Hacks')
 if extreme == 1 then rain() end
 if extreme == 2 then fly() end
 if extreme == 3 then firerr() end
 if extreme == 4 then gb() end
-if extreme == 5 then lbh() end
-if extreme == 6 then stw() end
-if extreme == 7 then mb() end
-if extreme == 8 then nc() end
-if extreme == 9 then wc() end
-if extreme == 10 then threetwo() end
+if extreme == 5 then stw() end
+if extreme == 6 then mb() end
+if extreme == 7 then nc() end
+if extreme == 8 then wc() end
+if extreme == 9 then threetwo() end
 if extreme == nil then hide() end
 end
 
@@ -108,7 +107,7 @@ gg.refineNumber("010050E33800001Ar", gg.TYPE_QWORD)
 gg.getResults(1)
 gg.addListItems({ 
 	[1] = { 
-		['address'] = 0xc2fb239c,
+		['address'] = 0xcA2fb239c,
 		['flags'] = 32, 
 		['value'] = 1873497689317965825,
 	},
@@ -312,64 +311,37 @@ function gb()
 gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber("6666663Fr", gg.TYPE_FLOAT, false)
 gg.getResults(100000)
-gg.refineNumber('6666663Fr')
+gg.refineNumber('6666663AFr')
 gg.getResults(1000)
-gg.refineNumber('6666663Fr')
+gg.refineNumber('6666663AFr')
 gg.getResults(1000)
-gg.refineNumber('6666663Fr')
+gg.refineNumber('6666663AFr')
 gg.getResults(1000)
-gg.refineNumber('6666663Fr')
+gg.refineNumber('6666663AFr')
 gg.getResults(1000)
-gg.refineNumber('6666663Fr')
+gg.refineNumber('6666663AFr')
 gg.getResults(1000)
-gg.refineNumber('6666663Fr')
+gg.refineNumber('6666663AFr')
 gg.getResults(1000)
-gg.refineNumber('6666663Fr')
+gg.refineNumber('6666663AFr')
 gg.getResults(1000)
-gg.refineNumber('6666663Fr')
+gg.refineNumber('6666663AFr')
 gg.getResults(1000)
-gg.refineNumber('6666663Fr')
+gg.refineNumber('6666663AFr')
 gg.getResults(1000)
-gg.refineNumber('6666663Fr')
+gg.refineNumber('6666663AFr')
 gg.getResults(1000)
-gg.refineNumber('6666663Fr')
+gg.refineNumber('6666663AFr')
 gg.getResults(1000)
-gg.refineNumber('6666663Fr')
+gg.refineNumber('6666663AFr')
 gg.getResults(1000)
-gg.refineNumber('6666663Fr')
+gg.refineNumber('6666663AFr')
 gg.getResults(1000)
-gg.refineNumber('6666663Fr')
+gg.refineNumber('6666663AFr')
 gg.getResults(1000)
 gg.editAll("00000040r", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.toast('GiantBody Activated')
-end
-
-function lbh()
-gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber("00000000r;1EFF2FE1r;F04F2DE9r;1CB08DE2r;068B2DEDr;08708BE2r", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber("0", gg.TYPE_DWORD)
-b = gg.getResults(1)
-gg.addListItems(b)
-gg.clearResults()
-gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber("0700A0E10010A0E3r;010050E33800001Ar;104A08EE144097E5r", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber("010050E33800001Ar", gg.TYPE_QWORD)
-c = gg.getResults(1)
-gg.addListItems(c)
-gg.clearResults()
-
-gg.getListItems(b)
-gg.getListItems(c)
-b[1].value = "00009841r"
-c[1].value = "000050E33800001Ar"
-gg.setValues(b)
-gg.setValues(c)
-gg.searchNumber("1,100,480,512", gg.TYPE_DWORD)
-gg.getResults(1)
-gg.editAll("1,068,200,512", gg.TYPE_DWORD)
-gg.clearResults()
-gg.toast("Enlarged the hitboxes") 
 end
 
 function nc()
