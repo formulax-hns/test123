@@ -309,7 +309,7 @@ gg.setRanges(old)
 end
 function gb()
 gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("6666663Fr", gg.TYPE_FLOAT, false)
+gg.searchNumber("6666663AFr", gg.TYPE_FLOAT, false)
 gg.getResults(100000)
 gg.refineNumber('6666663AFr')
 gg.getResults(1000)
