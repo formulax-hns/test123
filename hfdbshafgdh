@@ -128,7 +128,7 @@ gg.toast("Rain Activated")
 end
 
 function sixfor()
-six = gg.choice({'Radar,Aim Assist Boost','Back'},nil,"x64 - arm64")
+six = gg.choice({'Radar','Aim Assist Boost','Back'},nil,"x64 - arm64")
 if six == 1 then rad1() end
 if six == 2 then aab() end
 if six == 3 then HOME() end
