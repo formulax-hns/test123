@@ -304,15 +304,14 @@ gg.clearResults()
 end
 
 function fly()
-local old = gg.getRanges();
-gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber('0000C03Fr', gg.TYPE_FLOAT, false)
-gg.getResults(2000)
+gg.getResults(500000)
 gg.editAll("00004040r", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.toast('Fly Hack Activated')
 gg.setRanges(old)
 end
+
 function gb()
 gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber("6666663AFr", gg.TYPE_FLOAT, false)
