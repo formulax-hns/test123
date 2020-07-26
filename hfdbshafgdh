@@ -1,3 +1,10 @@
+local Passwords = {"02217782l","9210"} 
+local Menu = gg.prompt({"Key :"},nil,{"text"})
+if not Menu then return end
+for l , I in pairs(Passwords) do
+if Menu[1] == I then A = true end
+end
+if A ~= true then gg.alert("⚠ Error Wrong Key! ") return else gg.toast("✅ Correct Password !") end
 gg.toast('Zyph - 1.3 - 1.17.0f1147 - Made By Chr1s#0103')
 gg.sleep(10000)
 gg.toast('Loading.')
