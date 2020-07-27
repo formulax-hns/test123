@@ -46,7 +46,7 @@ gg.setRanges(old)
 end
 
 function threetwo()
-three = gg.choice({'Legit Hacks ',' Extreme Hacks ','Back'},nil,'x32(x86) (armeabi-v7a)')
+three = gg.choice({'Legit Hacks ',' Extreme Hacks ','Back'},nil,'(armeabi-v7a) - NOTE THAT X86-X32 IS A DIFFERENT CPU')
 if three == 1 then LH() end
 if three == 2 then EX() end
 if three == 3 then HOME() end
