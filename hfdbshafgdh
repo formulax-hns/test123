@@ -338,7 +338,7 @@ extreme = gg.choice({'Rain','Fly','X3.5 FireRate','Giant Body','Shoot Through Wa
 if extreme == 1 then rain() end
 if extreme == 2 then fly() end
 if extreme == 3 then firerr() end
-if extreme == 4 then gb() end
+if extreme == 4 then GB() end
 if extreme == 5 then stw() end
 if extreme == 6 then mb() end
 if extreme == 7 then nc() end
