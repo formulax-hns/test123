@@ -1,11 +1,11 @@
-local Passwords = {"02217782l","9210"} 
+local Passwords = {"0221l","1029"} 
 local Menu = gg.prompt({"Key :"},nil,{"text"})
 if not Menu then return end
 for l , I in pairs(Passwords) do
 if Menu[1] == I then A = true end
 end
-if A ~= true then gg.alert("⚠ Error Wrong Key! ") return else gg.toast("✅ Correct Key !") end
-gg.toast('Zyph - 1.3 - 1.17.0f1147 - Made By Chris')
+if A ~= true then gg.alert(" Error Wrong Key! ") return else gg.toast(" Correct Key !") end
+gg.toast('Zyph - 1.4 - 1.17.0f1147 - Made By Chris')
 gg.sleep(2000)
 gg.toast('Loading.')
 gg.sleep(100)
@@ -66,7 +66,7 @@ end
 
 
  function LH()
-legit = gg.choice ({'Radar ',' No Recoil/Spread','No Smoke/Flash','X2 FireRate','Aim Assist Boost','FOV','No AimPunch','Back','Hide Script'},nil,'Legit Hacks')
+legit = gg.choice ({'Radar ',' No Recoil/Spread','No Smoke/Flash','X2 FireRate','Aim Assist Boost','FOV','No AimPunch','Larger Leg Hitbox','Back','Hide Script'},nil,'Legit Hacks')
 if legit == 1 then rad() end
 if legit == 2 then nr() end
 if legit == 3 then nsf() end
@@ -74,13 +74,14 @@ if legit == 4 then firer() end
 if legit == 5 then aab() end
 if legit == 6 then FOV() end
 if legit == 7 then nap() end
-if legit == 8 then threetwo() end
+if legit == 8 then lbh() end
+if legit == 9 then threetwo() end
 if legit == nil then hide() end
 HOMEDM=-1
 end
 
 function EX()
-extreme = gg.choice({'Rain','Fly','X3.5 FireRate','Giant Body','Shoot Through Walls','Magic Bullets','Noclip','WallClimb','Back'},nil,'Extreme Hacks')
+extreme = gg.choice({'Rain','Fly','X3.5 FireRate','Giant Body','Shoot Through Walls','Magic Bullets','Noclip','WallClimb','Larger Head Hitbox','Back'},nil,'Extreme Hacks')
 if extreme == 1 then rain() end
 if extreme == 2 then fly() end
 if extreme == 3 then firerr() end
@@ -89,9 +90,42 @@ if extreme == 5 then stw() end
 if extreme == 6 then mb() end
 if extreme == 7 then nc() end
 if extreme == 8 then wc() end
+if extreme == 9 then lgh() end
 if extreme == 10 then threetwo() end
 if extreme == nil then hide() end
 end
+
+function lbh()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("00000000r;1EFF2FE1r;F04F2DE9r;1CB08DE2r;068B2DEDr;08708BE2r", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("0", gg.TYPE_DWORD)
+gg.getResults(1)
+gg.editAll("1,068,200,512", gg.TYPE_DWORD)
+gg.clearResults()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("0700A0E10010A0E3r;010050E33800001Ar;104A08EE144097E5r", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("010050E33800001Ar", gg.TYPE_QWORD)
+gg.getResults(1)
+gg.editAll("000050E33800001Ar" ,gg.TYPE_QWORD)
+gg.clearResults()
+gg.toast("Enlarged the leg hitbox'")
+end
+
+function lgh()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("00000000r;1EFF2FE1r;F04F2DE9r;1CB08DE2r;068B2DEDr;08708BE2r", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("0", gg.TYPE_DWORD)
+gg.getResults(1)
+gg.editAll("00009841r", gg.TYPE_DWORD)
+gg.clearResults()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("0700A0E10010A0E3r;010050E33800001Ar;104A08EE144097E5r", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("010050E33800001Ar", gg.TYPE_QWORD)
+gg.getResults(1)
+gg.editAll("000050E33800001Ar", gg.TYPE_QWORD)
+gg.clearResults()
+        gg.toast("Enlarged Head Hitbox")
+      end
 
 function rain()
 	gg.clearResults()
@@ -151,7 +185,7 @@ end
 function aab()
 gg.clearResults()
 gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber('0000803Fr', gg.TYPE_FLOAT, false)
+gg.searchNumber('1', gg.TYPE_FLOAT, false)
 t = gg.getResults(1000)
 t[98].value = '2.0'
 t[98].freeze = true
@@ -313,9 +347,9 @@ end
 function fly()
 local old = gg.getRanges();
 gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber('0000C03Fr', gg.TYPE_FLOAT, false)
+gg.searchNumber('1.5', gg.TYPE_FLOAT, false)
 gg.getResults(2000)
-gg.editAll("00004040r", gg.TYPE_FLOAT)
+gg.editAll("2.5", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.toast('Fly Hack Activated')
 gg.setRanges(old)
