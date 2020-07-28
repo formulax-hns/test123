@@ -5,7 +5,7 @@ for l , I in pairs(Passwords) do
 if Menu[1] == I then A = true end
 end
 if A ~= true then gg.alert(" Error Wrong Key! ") return else gg.toast(" Correct Key !") end
-gg.toast('Zyph - 2.1 - 1.17.0f1147 - Made By Chris')
+gg.toast('Zyph - 1.4 - 1.17.0f1147 - Made By Chris')
 gg.sleep(2000)
 gg.toast('Loading.')
 gg.sleep(100)
@@ -319,12 +319,12 @@ if extreme == nil then hide() end
 end
 
 function rd()
-gg.setRanges(gg.REGION_ANONYMOUS)
-    gg.searchNumber("66663640r", gg.TYPE_FLOAT)
+gg.getRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber(2.84999990463, gg.TYPE_FLOAT)
     gg.getResults(100)
-    gg.editAll("000000C0r", gg.TYPE_FLOAT)
+    gg.editAll(-2, gg.TYPE_FLOAT)
     gg.clearResults()
-    gg.toast("Rifle No Reload Activated")
+    gg.toast('No Relaod Activated')
   end
 
 function lbh()
