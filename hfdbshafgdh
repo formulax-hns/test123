@@ -1,11 +1,11 @@
-local Passwords = {"0221l","1029"} 
+local Passwords = {"0221l","9991"} 
 local Menu = gg.prompt({"Key :"},nil,{"text"})
 if not Menu then return end
 for l , I in pairs(Passwords) do
 if Menu[1] == I then A = true end
 end
 if A ~= true then gg.alert(" Error Wrong Key! ") return else gg.toast(" Correct Key !") end
-gg.toast('Zyph - 2.0 - 1.17.0f1147 - Made By Chr1s#0103')
+gg.toast('Zyph - 2.1 - 1.17.0f1147 - Made By Chris')
 gg.sleep(2000)
 gg.toast('Loading.')
 gg.sleep(100)
@@ -273,37 +273,6 @@ gg.getResults(1)
 gg.editAll("000050E33800001Ar", gg.TYPE_QWORD)
 gg.clearResults()
         gg.toast("Enlarged Head Hitbox")
-gg.clearResults()
-gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber("00000000r;1EFF2FE1r;F04F2DE9r;1CB08DE2r;068B2DEDr;08708BE2r", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber("0", gg.TYPE_DWORD)
-gg.getResults(1)
-gg.addListItems({ 
-	[1] = { 
-		['address'] = 0xc2fb26e0,
-		['flags'] = 4,
-		['value'] = 0,
-	},
-})
-gg.editAll("00009841r", gg.TYPE_DWORD)
-gg.clearResults()
-
-
-gg.clearResults()
-gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber("0700A0E10010A0E3r;010050E33800001Ar;104A08EE144097E5r", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber("010050E33800001Ar", gg.TYPE_QWORD)
-gg.getResults(1)
-gg.addListItems({ 
-	[1] = { 
-		['address'] = 0xc2fb239c,
-		['flags'] = 32, 
-		['value'] = 1873497689317965825,
-	},
-})
-gg.editAll("000050E33800001Ar", gg.TYPE_QWORD)
-gg.clearResults()
-gg.toast("Rain Activated")
         gg.alert('Boosting/Trolling Pack Activated')
         end
 
@@ -334,19 +303,29 @@ HOMEDM=-1
 end
 
 function EX()
-extreme = gg.choice({'Rain','Fly','X3.5 FireRate','Giant Body','Shoot Through Walls','Magic Bullets','Noclip','WallClimb','Larger Head Hitbox','Back'},nil,'Extreme Hacks')
+extreme = gg.choice({'Rain','Fly','X3.5 FireRate','Giant Body','Shoot Through Walls','Magic Bullets','Noclip','WallClimb','Larger Head Hitbox','Rifle No Reload','Back'},nil,'Extreme Hacks')
 if extreme == 1 then rain() end
 if extreme == 2 then fly() end
 if extreme == 3 then firerr() end
-if extreme == 4 then GB() end
+if extreme == 4 then gb() end
 if extreme == 5 then stw() end
 if extreme == 6 then mb() end
 if extreme == 7 then nc() end
 if extreme == 8 then wc() end
 if extreme == 9 then lgh() end
-if extreme == 10 then threetwo() end
+if extreme == 10 then rd() end
+if extreme == 11 then threetwo() end
 if extreme == nil then hide() end
 end
+
+function rd()
+gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("66663640r", gg.TYPE_FLOAT)
+    gg.getResults(100)
+    gg.editAll("000000C0r", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.toast("Rifle No Reload Activated")
+  end
 
 function lbh()
 gg.setRanges(gg.REGION_CODE_APP)
@@ -557,13 +536,12 @@ end
 
 function FOV()
 gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber("0000B443r", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("0000B443r", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(50)
-gg.editAll("00007543r", gg.TYPE_FLOAT)
-gg.toast('Fov Activated')
-gg.clearResults()
-end
+    gg.searchNumber("360.0F;3.14159274101F:5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("360", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(50)
+    gg.editAll("245", gg.TYPE_FLOAT)
+    gg.toast(" FOV Changed ")
+    end
 
 function mb()
 local old = gg.getRanges();
@@ -608,40 +586,39 @@ gg.clearResults()
 gg.toast('Fly Hack Activated')
 gg.setRanges(old)
 end
-
-function GB()
+function gb()
 gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("6666663Fr", gg.TYPE_FLOAT, false)
+gg.searchNumber("6666663AFr", gg.TYPE_FLOAT, false)
 gg.getResults(100000)
-gg.refineNumber('6666663Fr')
+gg.refineNumber('6666663AFr')
 gg.getResults(1000)
-gg.refineNumber('6666663Fr')
+gg.refineNumber('6666663AFr')
 gg.getResults(1000)
-gg.refineNumber('6666663Fr')
+gg.refineNumber('6666663AFr')
 gg.getResults(1000)
-gg.refineNumber('6666663Fr')
+gg.refineNumber('6666663AFr')
 gg.getResults(1000)
-gg.refineNumber('6666663Fr')
+gg.refineNumber('6666663AFr')
 gg.getResults(1000)
-gg.refineNumber('6666663Fr')
+gg.refineNumber('6666663AFr')
 gg.getResults(1000)
-gg.refineNumber('6666663Fr')
+gg.refineNumber('6666663AFr')
 gg.getResults(1000)
-gg.refineNumber('6666663Fr')
+gg.refineNumber('6666663AFr')
 gg.getResults(1000)
-gg.refineNumber('6666663Fr')
+gg.refineNumber('6666663AFr')
 gg.getResults(1000)
-gg.refineNumber('6666663Fr')
+gg.refineNumber('6666663AFr')
 gg.getResults(1000)
-gg.refineNumber('6666663Fr')
+gg.refineNumber('6666663AFr')
 gg.getResults(1000)
-gg.refineNumber('6666663Fr')
+gg.refineNumber('6666663AFr')
 gg.getResults(1000)
-gg.refineNumber('6666663Fr')
+gg.refineNumber('6666663AFr')
 gg.getResults(1000)
-gg.refineNumber('6666663Fr')
+gg.refineNumber('6666663AFr')
 gg.getResults(1000)
-gg.editAll("2", gg.TYPE_FLOAT)
+gg.editAll("00000040r", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.toast('GiantBody Activated')
 end
@@ -649,15 +626,15 @@ end
 function nc()
 gg.searchNumber("CDCCCC3Er", gg.TYPE_FLOAT, false)
 gg.getResults(800)
-gg.editAll('000040C0r',gg.TYPE_FLOAT)
+gg.editAll('000040C0r')
 gg.toast('NoClip Activated')
 gg.clearResults()
 end
 
 function wc()
-	gg.searchNumber("CDCCCC3Er", gg.TYPE_FLOAT, false)
+	gg.search("CDCCCC3Er", gg.TYPE_FLOAT, false)
 gg.getResults(800)
-gg.editAll('CDCCCCBEr', gg.TYPE_FLOAT)
+gg.editAll('CDCCCCBEr')
 gg.toast('Wallclimb Activated')
 gg.clearResults()
 end
