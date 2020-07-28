@@ -324,7 +324,7 @@ gg.getRanges(gg.REGION_ANONYMOUS)
     gg.getResults(100)
     gg.editAll(-2, gg.TYPE_FLOAT)
     gg.clearResults()
-    gg.toast('No Relaod Activated')
+    gg.toast('No Rifle Reload Activated')
   end
 
 function lbh()
