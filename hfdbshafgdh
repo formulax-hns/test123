@@ -617,15 +617,15 @@ end
 function nc()
 gg.searchNumber("CDCCCC3Er", gg.TYPE_FLOAT, false)
 gg.getResults(800)
-gg.editAll('000040C0r')
+gg.editAll('000040C0r',gg.TYPE_FLOAT)
 gg.toast('NoClip Activated')
 gg.clearResults()
 end
 
 function wc()
-	gg.search("CDCCCC3Er", gg.TYPE_FLOAT, false)
+	gg.searchNumber("CDCCCC3Er", gg.TYPE_FLOAT, false)
 gg.getResults(800)
-gg.editAll('CDCCCCBEr')
+gg.editAll('CDCCCCBEr', gg.TYPE_FLOAT)
 gg.toast('Wallclimb Activated')
 gg.clearResults()
 end
