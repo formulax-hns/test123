@@ -291,7 +291,7 @@ HOMEDM=-1
 end
 
 function EX()
-extreme = gg.choice({'Rain','Fly','X3.5 FireRate','Giant Body','Shoot Through Walls','Magic Bullets','Noclip','WallClimb','Larger Head Hitbox','Rifle No Reload','Back'},nil,'Extreme Hacks')
+extreme = gg.choice({'Rain','Fly','X3.5 FireRate','Giant Body','Shoot Through Walls','Magic Bullets','Noclip','WallClimb','Larger Head Hitbox','Rifle No Reload(DeathMatch)','Back'},nil,'Extreme Hacks')
 if extreme == 1 then rain() end
 if extreme == 2 then fly() end
 if extreme == 3 then firerr() end
