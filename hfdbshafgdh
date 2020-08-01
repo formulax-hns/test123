@@ -6,7 +6,7 @@ if Menu[1] == I then A = true end
 end
 if A ~= true then gg.alert("⚠ Error Wrong Key! ") return else gg.toast("✅ Correct Password !") end
 if A ~= true then gg.alert(" Error Wrong Key! ") return else gg.toast(" Correct Key !") end
-gg.toast('Zyph - 2.1 - 1.17.0f1147 - Made By Chris')
+gg.toast('Zyph - 2.2 - 1.17.0f1147 - Made By Chr1s#0103')
 gg.sleep(2000)
 gg.toast('Loading.')
 gg.sleep(100)
@@ -20,7 +20,7 @@ gg.toast('Loaded!')
 
 HOMHOMHOME=1
 function HOME()
-AB = gg.choice({'32 Bit','64 Bit','Crash Game after Match Ends  [32 BIT]','Kill Script'},nil,'Pick your Device Architecture')
+AB = gg.choice({'32 Bit','64 Bit','Crash Game after Match Ends[32 BIT]','Kill Script'},nil,'Pick your Device Architecture')
 if AB == 1 then threetwo() end
 if AB == 2 then sixfor() end
 if AB == 3 then crash() end
@@ -47,7 +47,7 @@ gg.setRanges(old)
 end
 
 function threetwo()
-three = gg.choice({'Legit Hacks ',' Extreme Hacks ','HackPack','Back'},nil,'(armeabi-v7a) - NOTE THAT X86-X32 IS A DIFFERENT CPU')
+three = gg.choice({'Legit Hacks ',' Extreme Hacks ','HackPack','Back'},nil,'(armeabi-v7a)')
 if three == 1 then LH() end
 if three == 2 then EX() end
 if three == 3 then HP() end
@@ -85,74 +85,6 @@ gg.refineNumber("F0482DE910B08DE2r", gg.TYPE_QWORD)
 gg.getResults(1)
 gg.editAll("00F020E31EFF2FE1r", gg.TYPE_QWORD)
         gg.toast("Removed AimPunch")
-gg.searchNumber("0AD7233Cr;00007F43r;00000000r;F04F2DE9r;10D04DE2r;0060A0E1r;000057E3r;0050A0E3r", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber("0AD7233Cr", gg.TYPE_DWORD)
-gg.getResults(4)
-gg.addListItems({ 
-	[1] = { 
-		['address'] = 3298883208.0,
-		['flags'] = 4, 
-		['value'] = 1008981770,
-	},
-	[2] = {
-		['address'] = 3298883212.0,
-		['flags'] = 4, 
-		['value'] = 1008981770,
-	},
-	[3] = { 
-		['address'] = 3298883216.0,
-		['flags'] = 4,
-		['value'] = 1008981770,
-	},
-	[4] = {		['address'] = 3298883220.0,
-		['flags'] = 4,
-		['value'] = 1008981770,
-	},
-})
-gg.editAll("000010C1r", gg.TYPE_DWORD)
-gg.clearResults()
-gg.clearResults()
-gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber("0110A0E30020A0E3r;0AD7233CF04D2DE9r;0040A0E138019FE5r", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber("0AD7233CF04D2DE9r", gg.TYPE_QWORD)
-gg.getResults(1)
-gg.addListItems({ 
-	[1] = { 
-		['address'] = 3204799284.0,
-		['flags'] = 32,
-		['value'] = -1644572594723891456.0,
-	},
-})
-gg.editAll("003C1C46F04D2DE9r", gg.TYPE_QWORD)
-gg.clearResults()
-gg.clearResults()
-gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber("0710A0E10020A0E3r;000050E34700001Ar;0070A0E1000057E3r", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber("000050E34700001Ar", gg.TYPE_QWORD)
-gg.getResults(1)
-gg.addListItems({ 
-	[1] = {
-		['address'] = 3205486444.0,
-		['flags'] = 32, 
-		['value'] = 1873497753742475264.0,
-	},
-})
-gg.editAll("010050E34700001Ar", gg.TYPE_QWORD)
-gg.clearResults()
-gg.toast(" Removed Flash/Smoke ")
-gg.setRanges(gg.REGION_CODE_APP)
-    gg.searchNumber("DB0F4940r", gg.TYPE_FLOAT)
-    gg.getResults(1)
-    gg.addListItems({
-      [1] = {
-        address = 3307425376,
-        flags = 16,
-        value = 3.1415927410125732
-      }
-    })
-    gg.editAll("00000000r", gg.TYPE_FLOAT)
-    gg.clearResults()
-    gg.toast("No Recoil Activated")
     local old = gg.getRanges();
 gg.setRanges(gg.REGION_CODE_APP)
 gg.searchNumber("060050E101500013r", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
@@ -173,61 +105,6 @@ gg.refineNumber("F0482DE910B08DE2r", gg.TYPE_QWORD)
 gg.getResults(1)
 gg.editAll("00F020E31EFF2FE1r", gg.TYPE_QWORD)
         gg.toast("Removed AimPunch")
-gg.searchNumber("0AD7233Cr;00007F43r;00000000r;F04F2DE9r;10D04DE2r;0060A0E1r;000057E3r;0050A0E3r", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber("0AD7233Cr", gg.TYPE_DWORD)
-gg.getResults(4)
-gg.addListItems({ 
-	[1] = { 
-		['address'] = 3298883208.0,
-		['flags'] = 4, 
-		['value'] = 1008981770,
-	},
-	[2] = {
-		['address'] = 3298883212.0,
-		['flags'] = 4, 
-		['value'] = 1008981770,
-	},
-	[3] = { 
-		['address'] = 3298883216.0,
-		['flags'] = 4,
-		['value'] = 1008981770,
-	},
-	[4] = {		['address'] = 3298883220.0,
-		['flags'] = 4,
-		['value'] = 1008981770,
-	},
-})
-gg.editAll("000010C1r", gg.TYPE_DWORD)
-gg.clearResults()
-gg.clearResults()
-gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber("0110A0E30020A0E3r;0AD7233CF04D2DE9r;0040A0E138019FE5r", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber("0AD7233CF04D2DE9r", gg.TYPE_QWORD)
-gg.getResults(1)
-gg.addListItems({ 
-	[1] = { 
-		['address'] = 3204799284.0,
-		['flags'] = 32,
-		['value'] = -1644572594723891456.0,
-	},
-})
-gg.editAll("003C1C46F04D2DE9r", gg.TYPE_QWORD)
-gg.clearResults()
-gg.clearResults()
-gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber("0710A0E10020A0E3r;000050E34700001Ar;0070A0E1000057E3r", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber("000050E34700001Ar", gg.TYPE_QWORD)
-gg.getResults(1)
-gg.addListItems({ 
-	[1] = {
-		['address'] = 3205486444.0,
-		['flags'] = 32, 
-		['value'] = 1873497753742475264.0,
-	},
-})
-gg.editAll("010050E34700001Ar", gg.TYPE_QWORD)
-gg.clearResults()
-gg.toast(" Removed Flash/Smoke ")
 gg.setRanges(gg.REGION_CODE_APP)
     gg.searchNumber("DB0F4940r", gg.TYPE_FLOAT)
     gg.getResults(1)
@@ -274,43 +151,40 @@ function rad1()
   gg.toast("Radar Activated")
 end
 
-
-
  function LH()
-legit = gg.choice ({'Radar ',' No Recoil/Spread','No Smoke/Flash','X2 FireRate','Aim Assist Boost','FOV','No AimPunch','Larger Leg Hitbox','Back','Hide Script'},nil,'Legit Hacks')
-if legit == 1 then rad() end
-if legit == 2 then nr() end
-if legit == 3 then nsf() end
-if legit == 4 then firer() end
-if legit == 5 then aab() end
-if legit == 6 then FOV() end
-if legit == 7 then nap() end
-if legit == 8 then lbh() end
-if legit == 9 then threetwo() end
+legit = gg.multiChoice ({'Radar ',' No Recoil/Spread','No Smoke/Flash','X2 FireRate','Aim Assist Boost','FOV','No AimPunch','Larger Leg Hitbox','Back','Hide Script'},nil,'Legit Hacks')
+if legit[1] == true then rad() end
+if legit[2] == true then nr() end
+if legit[3] == true then nsf() end
+if legit[4] == true then firer() end
+if legit[5] == true then aab() end
+if legit[6] == true then FOV() end
+if legit[7] == true then nap() end
+if legit[8] == true then lbh() end
+if legit[6] == true then threetwo() end
 if legit == nil then hide() end
 HOMEDM=-1
 end
 
 function EX()
-extreme = gg.choice({'Rain','Fly','X3.5 FireRate','Giant Body','Shoot Through Walls','Magic Bullets','Noclip','WallClimb','Larger Head Hitbox','Rifle No Reload(DeathMatch)','Back'},nil,'Extreme Hacks')
-if extreme == 1 then rain() end
-if extreme == 2 then fly() end
-if extreme == 3 then firerr() end
-if extreme == 4 then gb() end
-if extreme == 5 then stw() end
-if extreme == 6 then mb() end
-if extreme == 7 then nc() end
-if extreme == 8 then wc() end
-if extreme == 9 then lgh() end
-if extreme == 10 then rd() end
-if extreme == 11 then threetwo() end
+extreme = gg.multiChoice({'Rain','Fly','X3.5 FireRate','Giant Body','Shoot Through Walls','Magic Bullets','Noclip','WallClimb','Larger Head Hitbox','Rifle No Reload(DeathMatch)','Back'},nil,'Extreme Hacks')
+if extreme[1] == true then rain() end
+if extreme[2] == true then fly() end
+if extreme[3] == true then firerr() end
+if extreme[4] == true then gb() end
+if extreme[5] == true then stw() end
+if extreme[6] == true then mb() end
+if extreme[7] == true then nc() end
+if extreme[9] == true then lgh() end
+if extreme[10] == true then rd() end
+if extreme[11] == true then threetwo() end
 if extreme == nil then hide() end
 end
 
 function rd()
 gg.getRanges(gg.REGION_ANONYMOUS)
-    gg.searchNumber(2.84999990463, gg.TYPE_FLOAT)
-    gg.getResults(100)
+    gg.searchNumber(2.84999990463, gg.TYPE_FLOAT, false)
+    gg.getResults(40)
     gg.editAll(-2, gg.TYPE_FLOAT)
     gg.clearResults()
     gg.toast('No Rifle Reload Activated')
@@ -384,10 +258,15 @@ gg.toast("Rain Activated")
 end
 
 function sixfor()
-six = gg.choice({'Radar','Aim Assist Boost','Back'},nil,"x64 - arm64")
-if six == 1 then rad1() end
-if six == 2 then aab() end
-if six == 3 then HOME() end
+six = gg.multiChoice({'Radar','Aim Assist Boost','FOV','x2 FireRate','Fly','Remove Aimpunch','Back'},nil,"arm64")
+if six[1] == true then rad1() end
+if six[2] == true then aab() end
+if six[3] == true then FOV() end
+if six[4] == true then firer() end
+if six[5] == true then fly() end
+if six[5] == true then nap() end
+if six[5] == true then HOMEE() end
+if six == nil then hide() end
 end
 
 function nap()
@@ -570,7 +449,7 @@ local old = gg.getRanges();
 gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber('1.5', gg.TYPE_FLOAT, false)
 gg.getResults(2000)
-gg.editAll("2.5", gg.TYPE_FLOAT)
+gg.editAll("2.8", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.toast('Fly Hack Activated')
 gg.setRanges(old)
