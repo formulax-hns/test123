@@ -265,14 +265,14 @@ gg.toast("Rain Activated")
 end
 
 function sixfor()
-six = gg.multiChoice({'Radar','Aim Assist Boost','FOV','x2 FireRate','Fly','Remove Aimpunch','Rain','Back'},nil,"arm64")
+six = gg.multiChoice({'Radar','Aim Assist Boost','FOV','x2 FireRate','Fly','Remove Aimpunch','Body Hitbox Increase','Back'},nil,"arm64")
 if six[1] == true then rad1() end
 if six[2] == true then aab() end
 if six[3] == true then FOV() end
 if six[4] == true then firer() end
 if six[5] == true then fly() end
 if six[6] == true then nap() end
-if six[7] == true then rain() end
+if six[7] == true then lbh() end
 if six[8] == true then HOMEE() end
 if six == nil then hide() end
 end
