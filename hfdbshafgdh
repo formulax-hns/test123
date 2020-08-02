@@ -4,6 +4,8 @@ if not Menu then return end
 for l , I in pairs(Passwords) do
 if Menu[1] == I then A = true end
 end
+if A ~= true then gg.alert("⚠ Error Wrong Key! ") return else gg.toast("✅ Correct Password !") end
+if A ~= true then gg.alert(" Error Wrong Key! ") return else gg.toast(" Correct Key !") end
 gg.toast('Zyph - 2.3 - 1.17.0f1147 - Made By Chr1s#0103')
 gg.sleep(2000)
 gg.toast('Loading.')
@@ -265,7 +267,7 @@ gg.toast("Rain Activated")
 end
 
 function sixfor()
-six = gg.multiChoice({'Radar','Aim Assist Boost','FOV','x2 FireRate','Fly','Remove Aimpunch','Body Hitbox Increase','Back'},nil,"arm64")
+six = gg.multiChoice({'Radar','Aim Assist Boost','FOV','x2 FireRate','Fly','Remove Aimpunch','Larger Body Hitbox','Magic Bullets','Back'},nil,"arm64")
 if six[1] == true then rad1() end
 if six[2] == true then aab() end
 if six[3] == true then FOV() end
@@ -273,8 +275,19 @@ if six[4] == true then firer() end
 if six[5] == true then fly() end
 if six[6] == true then nap() end
 if six[7] == true then lbh() end
-if six[8] == true then HOMEE() end
+if six[8] == true then mag1() end
+if six[9] == true then HOMEE() end
 if six == nil then hide() end
+end
+
+function mag1()
+gg.getRanges()
+  gg.setRanges(gg.REGION_C_BSS)
+  gg.searchNumber("2", gg.TYPE_DOUBLE)
+  gg.getResults(10000)
+  gg.editAll(-1.4, gg.TYPE_DOUBLE)
+  gg.clearResults()
+  gg.toast("Magic Bullets Activated")
 end
 
 function nap()
