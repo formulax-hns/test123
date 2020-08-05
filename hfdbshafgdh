@@ -1,4 +1,4 @@
-local Passwords = {"221","1910","staff1","3332"} 
+local Passwords = {"221","1015","staff1","3332"} 
 local Menu = gg.prompt({"Key :"},nil,{"text"})
 if not Menu then return end
 for l , I in pairs(Passwords) do
@@ -6,7 +6,7 @@ if Menu[1] == I then A = true end
 end
 if A ~= true then gg.alert("⚠ Error Wrong Key! ") return else gg.toast("✅ Correct Password !") end
 if A ~= true then gg.alert(" Error Wrong Key! ") return else gg.toast(" Correct Key !") end
-gg.toast('Zyph - 2.3 - 1.17.0f1147 - Made By Chr1s#0103')
+gg.toast('Zyph - 3.0 - 1.17.0f1147,1.18.0f1155 - Made By Chr1s#0103')
 gg.sleep(2000)
 gg.toast('Loading.')
 gg.sleep(100)
@@ -167,7 +167,7 @@ HOMEDM=-1
 end
 
 function EX()
-extreme = gg.multiChoice({'Rain','Fly','X3.5 FireRate','Giant Body','Shoot Through Walls','Magic Bullets','Noclip','WallClimb','Larger Head Hitbox','Rifle No Reload(DeathMatch)','Hide Rain Bullets','Back'},nil,'Extreme Hacks')
+extreme = gg.multiChoice({'Rain','Fly','X3.5 FireRate','Giant Body','Shoot Through Walls','Magic Bullets','Noclip','WallClimb','Larger Head Hitbox','Rifle No Reload(DeathMatch)','Hide Rain Bullets','UnderGround','Back'},nil,'Extreme Hacks')
 if extreme[1] == true then rain() end
 if extreme[2] == true then fly() end
 if extreme[3] == true then firerr() end
@@ -178,8 +178,27 @@ if extreme[7] == true then nc() end
 if extreme[9] == true then lgh() end
 if extreme[10] == true then rd() end
 if extreme[11] == true then hs() end
-if extreme[12] == true then threetwo() end
+if extreme[12] == true then ug() end
+if extreme[13] == true then threetwo() end
 if extreme == nil then hide() end
+end
+
+function ug()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("350.632872", gg.TYPE_FLOAT)
+gg.getResults (100)
+gg.editAll ('3', gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber('1.49999988379',gg.TYPE_FLOAT)
+gg.getResults(1000)
+gg.editAll('-1',gg.TYPE_FLOAT)
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("3", gg.TYPE_FLOAT)
+gg.getResults (100)
+gg.editAll ('20.36283', gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast('UnderGround Activated')
 end
 
 function hs()
