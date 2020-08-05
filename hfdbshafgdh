@@ -6,7 +6,7 @@ if Menu[1] == I then A = true end
 end
 if A ~= true then gg.alert("⚠ Error Wrong Key! ") return else gg.toast("✅ Correct Password !") end
 if A ~= true then gg.alert(" Error Wrong Key! ") return else gg.toast(" Correct Key !") end
-gg.toast('Zyph - 3.0 - 1.17.0f1147,1.18.0f1155 - Made By Chr1s#0103')
+gg.toast('Zyph - 3.1 - 1.17.0f1147,1.18.0f1155 - Made By Chr1s#0103')
 gg.sleep(2000)
 gg.toast('Loading.')
 gg.sleep(100)
@@ -286,17 +286,35 @@ gg.toast("Rain Activated")
 end
 
 function sixfor()
-six = gg.multiChoice({'Radar','Aim Assist Boost','FOV','x2 FireRate','Fly','Remove Aimpunch','Larger Body Hitbox','Magic Bullets','Back'},nil,"arm64")
-if six[1] == true then rad1() end
-if six[2] == true then aab() end
-if six[3] == true then FOV() end
-if six[4] == true then firer() end
-if six[5] == true then fly() end
-if six[6] == true then nap() end
-if six[7] == true then lbh() end
-if six[8] == true then mag1() end
-if six[9] == true then HOMEE() end
+six = gg.multiChoice({'Legit Hacks','Extreme Hacks','Back'},nil,"arm64")
+if six[1] == true then LH1() end
+if six[2] == true then EX1() end
+if six[3] == true then HOME() end
 if six == nil then hide() end
+end
+
+function LH1()
+lh = gg.multiChoice({'Radar','Aim Assist boost','FOV','X2 Firerate','No Aimpunch','Larger Body Hitbox','Back'},nil,"Legit Hacks")
+if lh[1] == true then rad1() end
+if lh[2] == true then aab() end
+if lh[3] == true then FOV() end
+if lh[4] == true then firer() end
+if lh[5] == true then nap() end
+if lh[6] == true then lbh() end
+if lh[7] == true then sixfor() end
+if lh == nil then hide() end
+end
+
+function EX1()
+ex = gg.multiChoice({'Fly','Underground','No Reload','Magic Bullets','Shoot Through Walls','NoClip','Back'},nil,"Extreme Hacks")
+if ex[1] == true then fly() end
+if ex[2] == true then ug() end
+if ex[3] == true then nr() end
+if ex[4] == true then mag1() end
+if ex[5] == true then stw() end
+if ex[6] == true then nc() end
+if ex[7] == true then sixfor() end
+if ex == nil then hide() end
 end
 
 function mag1()
@@ -532,7 +550,7 @@ end
 function nc()
 gg.searchNumber("CDCCCC3Er", gg.TYPE_FLOAT, false)
 gg.getResults(800)
-gg.editAll('000040C0r')
+gg.editAll('000040C0r', gg.TYPE_FLOAT)
 gg.toast('NoClip Activated')
 gg.clearResults()
 end
@@ -540,7 +558,7 @@ end
 function wc()
 	gg.search("CDCCCC3Er", gg.TYPE_FLOAT, false)
 gg.getResults(800)
-gg.editAll('CDCCCCBEr')
+gg.editAll('CDCCCCBEr', gg.TYPE_FLOAT)
 gg.toast('Wallclimb Activated')
 gg.clearResults()
 end
